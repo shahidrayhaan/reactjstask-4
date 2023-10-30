@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import UserTable from "./components/C1";
 
-function App() {
+const App = () => {
+  const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+     <UserTable />
     </div>
   );
-}
+};
 
 export default App;
